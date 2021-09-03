@@ -180,6 +180,16 @@ button
 .bg-red
   background: $accent
 
+.btn-white
+  background: #fff
+  color: #1d1d1b
+  font-size: 20px
+  font-weight: bold
+  &:hover
+    background: $accent
+    color: #fff
+    .btn-icon
+      filter: brightness(0) invert(1)
 
 .btn-burger
   display: flex
@@ -240,6 +250,9 @@ button
 .color-red
   color: $accent
 
+.mb-20
+  margin-bottom: 20px
+
 .logo
   max-width: 370px
   width: 100%
@@ -282,7 +295,7 @@ h1
   width: 100%
 
 h2
-  font-size: 67px
+  font-size: 57px
   font-weight: bold
   width: fit-content
   margin: 0 auto
@@ -809,6 +822,110 @@ header
 .input-file
   display: none
 
+//house
+.main-house
+  padding: 0 0 74px
+  h1
+    margin: 226px auto 0
+
+.breadcrumbs
+  margin: 44px 0
+
+.breadcrumb
+  background: transparent
+  padding: 0
+  border: none
+    radius: 0
+  font-size: 19px
+  li
+    a
+      color: #fff
+      &:after
+        content: '/'
+        margin: 0 5px
+        display: inline-block
+  .active
+    color: #fff
+    font-weight: bold
+  .breadcrumb-item+.breadcrumb-item
+    padding: 0
+    &::before
+      display: none
+
+.breadcrumb.color-black
+  li
+    a
+      color: #1d1d1b
+  .active
+    color: #1d1d1b
+
+.comfort
+  padding: 70px 0 49px
+  .box-text
+    font-size: 15px
+    margin: 27px 0 0
+    max-width: 461px
+    width: 100%
+  h2
+    padding: 0 157px 0 0
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      right: 0
+      top: 0
+      width: 33px
+      height: 34px
+      background: url("../img/decor1.png") no-repeat center
+        size: 100%
+
+.system-section
+  h2
+    padding: 0
+    span
+      display: block
+  .box-text
+    padding: 0
+    line-height: 1.93
+
+.calculate
+  padding: 79px 0 87px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 0
+    transform: translate(-50%,0)
+    height: 4px
+    max-width: 1200px
+    width: calc(100% - 30px)
+    background: #fff
+  .btn
+    max-width: 500px
+    width: 100%
+    margin: 0 0 0 auto
+    justify-content: space-between
+    font-size: 29px
+    height: 89px
+    padding: 0 40px
+
+.page-documents
+  padding: 0 0 113px
+  .breadcrumbs
+    margin: 44px 0 70px
+
+.documents-btn
+  width: 100%
+  text-align: left
+  padding: 0 34px 0 44px
+  justify-content: space-between
+  height: 77px
+
+.career-btn
+  &:hover
+    .btn-icon
+      transform: rotate(90deg)
 
 @import "media"
 // Всегда в конце

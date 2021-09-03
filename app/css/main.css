@@ -195,6 +195,18 @@ button {
 .bg-red {
   background: #d63417; }
 
+.btn-white {
+  background: #fff;
+  color: #1d1d1b;
+  font-size: 20px;
+  font-weight: bold; }
+  .btn-white:hover {
+    background: #d63417;
+    color: #fff; }
+    .btn-white:hover .btn-icon {
+      -webkit-filter: brightness(0) invert(1);
+              filter: brightness(0) invert(1); }
+
 .btn-burger {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -263,6 +275,9 @@ button {
 .color-red {
   color: #d63417; }
 
+.mb-20 {
+  margin-bottom: 20px; }
+
 .logo {
   max-width: 370px;
   width: 100%;
@@ -306,7 +321,7 @@ h1 {
   width: 100%; }
 
 h2 {
-  font-size: 67px;
+  font-size: 57px;
   font-weight: bold;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -889,6 +904,112 @@ header {
 .input-file {
   display: none; }
 
+.main-house {
+  padding: 0 0 74px; }
+  .main-house h1 {
+    margin: 226px auto 0; }
+
+.breadcrumbs {
+  margin: 44px 0; }
+
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  border: none;
+    border-radius: 0;
+  font-size: 19px; }
+  .breadcrumb li a {
+    color: #fff; }
+    .breadcrumb li a:after {
+      content: '/';
+      margin: 0 5px;
+      display: inline-block; }
+  .breadcrumb .active {
+    color: #fff;
+    font-weight: bold; }
+  .breadcrumb .breadcrumb-item + .breadcrumb-item {
+    padding: 0; }
+    .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+      display: none; }
+
+.breadcrumb.color-black li a {
+  color: #1d1d1b; }
+
+.breadcrumb.color-black .active {
+  color: #1d1d1b; }
+
+.comfort {
+  padding: 70px 0 49px; }
+  .comfort .box-text {
+    font-size: 15px;
+    margin: 27px 0 0;
+    max-width: 461px;
+    width: 100%; }
+  .comfort h2 {
+    padding: 0 157px 0 0;
+    position: relative; }
+    .comfort h2:before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 33px;
+      height: 34px;
+      background: url("../img/decor1.png") no-repeat center;
+        background-size: 100%; }
+
+.system-section h2 {
+  padding: 0; }
+  .system-section h2 span {
+    display: block; }
+
+.system-section .box-text {
+  padding: 0;
+  line-height: 1.93; }
+
+.calculate {
+  padding: 79px 0 87px;
+  position: relative; }
+  .calculate:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    height: 4px;
+    max-width: 1200px;
+    width: calc(100% - 30px);
+    background: #fff; }
+  .calculate .btn {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 0 0 auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 29px;
+    height: 89px;
+    padding: 0 40px; }
+
+.page-documents {
+  padding: 0 0 113px; }
+  .page-documents .breadcrumbs {
+    margin: 44px 0 70px; }
+
+.documents-btn {
+  width: 100%;
+  text-align: left;
+  padding: 0 34px 0 44px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 77px; }
+
+.career-btn:hover .btn-icon {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -990,7 +1111,31 @@ header {
   .menu-list {
     font-size: 24px; }
   .mobile-menu {
-    padding: 30px 0; } }
+    padding: 30px 0; }
+  .main-house {
+    padding: 30px 0; }
+    .main-house h1 {
+      margin: 140px auto 0; }
+  .calculate {
+    padding: 40px 0; }
+    .calculate .btn {
+      margin: 30px auto 0;
+      font-size: 18px;
+      height: 60px;
+      padding: 0 20px;
+      max-width: 350px; }
+      .calculate .btn .btn-icon {
+        width: 30px; }
+  .page-documents {
+    padding: 0 0 50px; }
+    .page-documents .breadcrumbs {
+      margin: 30px 0 50px; }
+  .documents-btn {
+    padding: 0 30px;
+    font-size: 16px;
+    height: 65px; }
+    .documents-btn .btn-icon {
+      width: 20px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -1027,7 +1172,13 @@ header {
     .form-modal .btn {
       margin: 0 auto 20px; }
   .necessarily {
-    margin: 0 0 20px; } }
+    margin: 0 0 20px; }
+  .breadcrumb {
+    font-size: 16px; }
+  .comfort {
+    padding: 40px 0 30px; }
+    .comfort h2 {
+      padding: 0 60px 0 0; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -1109,7 +1260,11 @@ header {
   .contacts-form__col {
     width: 100%; }
   .contacts-form button {
-    margin: 20px 0 0; } }
+    margin: 20px 0 0; }
+  .comfort h2 {
+    padding: 0; }
+    .comfort h2:before {
+      display: none; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {
