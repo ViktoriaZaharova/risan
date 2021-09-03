@@ -30,6 +30,7 @@
 
 <body>
 
+
 <header class="bg-black color-white">
   <div class="container">
     <div class="row">
@@ -41,7 +42,7 @@
           <span class="btn-icon"><img src="img/phone.png" alt=""></span>
         </a>
 
-        <a href="#" class="btn btn-key btn-red"><span class="btn-text">Заказать ключ</span><span class="btn-icon"><img
+        <a href="#" class="btn btn-key btn-red" data-toggle="modal" data-target="#modalCall"><span class="btn-text">Заказать ключ</span><span class="btn-icon"><img
             src="img/key.png"
             alt=""></span></a>
 
@@ -53,6 +54,32 @@
       </div>
     </div>
   </div>
+
+  <div class="mobile-menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-5 offset-lg-1">
+          <ul class="menu-list">
+            <li><a href="index.html" class="links-logo">Рисан. Безопасность</a></li>
+            <li><a href="about.html">О проекте</a></li>
+            <li><a href="services.html">Наши услуги</a></li>
+            <li><a href="project.html">Проекты</a></li>
+            <li><a href="calculate.html">Калькулятор</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 offset-lg-2">
+          <ul class="menu-list">
+            <li><a href="career.html">Карьера</a></li>
+            <li><a href="document.html">Документы</a></li>
+            <li><a href="house.html">Для Дома</a></li>
+            <li><a href="business.html">Для Бизнеса</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </header>
 
 <main class="home">
@@ -60,7 +87,7 @@
     <div class="row">
       <div class="col-12">
         <h1 class="wow animate__animated animate__fadeInLeft">Заголовок</h1>
-        <div class="mouse wow animate__animated animate__fadeInRight"><img src="img/mouse.png" alt=""></div>
+        <a href="#blockBottom" class="mouse wow animate__animated animate__fadeInRight go_to"><img src="img/mouse.png" alt=""></a>
         <div class="bullets wow animate__animated animate__fadeInUp">
           <div class="bullet-item"><img src="img/bullet1.png" alt=""></div>
           <div class="bullet-item"><img src="img/bullet2.png" alt=""></div>
@@ -73,7 +100,7 @@
   </div>
 </main>
 
-<div class="category-section">
+<div class="category-section" id="blockBottom">
   <div class="container">
     <div class="row">
       <div class="col-12 d-flex flex-wrap align-items-stretch">
@@ -251,6 +278,80 @@
           </div>
         </form>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="modalCall" tabindex="-1" aria-labelledby="modalCallLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Отправка резюме</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="contacts-form form-modal">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <label><input type="text" placeholder="ФИО*" name="name" required></label>
+              </div>
+              <div class="col-12 col-lg-6">
+                <label><input type="text" placeholder="Телефон*" name="phone" required></label>
+              </div>
+
+              <div class="col-12 col-lg-6">
+                <label><input type="text" placeholder="Дата и место рождения*" name="date" required></label>
+              </div>
+              <div class="col-12 col-lg-6">
+                <label><input type="text" placeholder="Гражданство*" name="country" required></label>
+              </div>
+
+              <div class="col-12">
+                <label><input type="text" placeholder="Образование*" name="learn" required></label>
+              </div>
+
+              <div class="col-12">
+                <label><input type="text" placeholder="Последние три места работы*" name="work" required></label>
+              </div>
+
+              <div class="col-12">
+                <label><textarea name="message" placeholder="Расскажите о себе"></textarea></label>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="necessarily">* Обязательно к заполнению</div>
+              </div>
+              <div class="col-12 col-md-5 offset-md-1">
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom"></span><span class="checkbox-text">Согласие на обработку персональных данных.</span>
+                </label>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label class="label-file btn btn-black">
+                  <input type="file" class="input-file">
+                  <span class="btn-text">Загрузить документы</span>
+                  <span class="btn-icon"><img src="img/download-file.png" alt=""></span>
+                </label>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <button class="btn btn-red" type="submit">
+                  <span class="btn-text">Оставить заявку</span>
+                  <span class="btn-icon"><img src="img/arrow-right.png" alt=""></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
     </div>
   </div>
 </div>

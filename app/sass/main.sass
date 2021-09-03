@@ -149,6 +149,9 @@ button
   padding: 11px
   border: none
     radius: 0
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
 
 .btn-icon
   margin: 0 0 0 18px
@@ -183,25 +186,47 @@ button
   flex-direction: column
   align-items: flex-end
   width: 59px
+  height: 31px
   cursor: pointer
   margin: 0 40px 0 0
   transition: .3s ease
-
+  position: relative
   span
     display: block
     width: 100%
     height: 1.8px
     background: #fff
-    margin: 0 0 13px
     transition: .3s ease
+    position: absolute
+    right: 0
+    top: 0
 
     &:last-child
       width: 41px
       margin: 0
-
+      top: auto
+      bottom: 0
+    &:nth-child(2)
+      transform: translate(0,-50%)
+      top: 50%
   &:hover
     span
       background: $accent
+
+.btn-burger.click
+  span
+    position: absolute
+    left: 34px
+    top: 0
+    width: 1px
+    height: 34px
+    &:nth-child(2)
+      width: 0
+      height: 0
+    &:first-child
+      transform: rotate(45deg)
+    &:last-child
+      transform: rotate(135deg)
 
 .bg-black
   background: $black
@@ -293,7 +318,7 @@ h2
 //header
 header
   padding: 44px 0 33px
-
+  position: relative
   .container
     position: relative
 
@@ -306,6 +331,34 @@ header
         size: 100%
       right: -18px
       top: -29px
+
+.mobile-menu
+  display: none
+  position: absolute
+  top: 100%
+  z-index: 3
+  width: 100%
+  background: #1d1d1b
+  color: #fff
+  padding: 50px 0 65px
+  .container
+    &:before
+      display: none
+
+.menu-list
+  font-size: 31px
+  li
+    margin: 0 0 18px
+    &:last-child
+      margin: 0
+    a
+      color: #fff
+      &:hover
+        color: $accent
+    .links-logo
+      color: #d63417
+      text-decoration: underline
+      font-weight: bold
 
 //category-section
 .category-section
@@ -654,6 +707,107 @@ header
 .mail
   font-size: 20px
   font-weight: bold
+
+.modal-backdrop
+  opacity: .5
+  background: #1d1d1b
+
+.modal-dialog
+  max-width: 1030px
+
+.modal-content
+  padding: 64px 65px 83px
+  border: none
+    radius: 0
+
+
+.modal-header
+  padding: 0
+  border: none
+  margin: 0 0 34px
+  align-items: center
+  .close
+    position: absolute
+    margin: 0 0 0 auto
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 0
+    width: 24px
+    height: 24px
+    opacity: 1
+    top: 35px
+    right: 37px
+    span
+      position: absolute
+      width: 1px
+      height: 100%
+      background: #232323
+      display: block
+      top: 0
+      left: 12px
+      &:first-child
+        transform: rotate(45deg)
+      &:last-child
+        transform: rotate(135deg)
+
+
+.modal-title
+  font-size: 27px
+  font-weight: bold
+  color: #d63417
+
+.modal-body
+  padding: 0
+
+
+.form-modal
+  max-width: 860px
+  margin: 0 auto
+  padding: 0
+  label
+    margin: 0 0 28px
+  input
+    height: 71px
+    font-size: 12px
+    padding: 38px 27px 10px
+    color: #1d1d1b
+    border: solid 1px #232323
+    &::placeholder
+      color: #1d1d1b
+  textarea
+    height: 71px
+    color: #1d1d1b
+    border: solid 1px #232323
+    padding: 38px 27px 10px
+    font-size: 12px
+    &::placeholder
+      color: #1d1d1b
+  .btn
+    max-width: 311px
+    font-size: 16px
+    font-weight: bold
+    width: 100%
+    justify-content: space-between
+    padding: 0 35px
+    height: 54px
+  button
+    margin: 0 0 0 auto
+  .checkbox
+    justify-content: flex-end
+
+.necessarily
+  margin: 0 0 45px
+  color: #d63417
+  font-size: 12px
+
+.label-file
+  display: flex
+  align-items: center
+  color: #fff
+
+.input-file
+  display: none
 
 
 @import "media"
