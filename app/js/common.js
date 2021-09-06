@@ -22,3 +22,4 @@ $('.btn-burger').on('click', function () {
    $(this).toggleClass('click');
    $('.mobile-menu').fadeToggle();
 });
+
