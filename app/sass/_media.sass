@@ -28,6 +28,12 @@
   .contacts
     padding: 40px 0 60px
 
+  .goals-about:nth-child(even) .goals-content
+    padding: 0
+
+  .call-center__content
+    margin: 0
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1100px)
   .contacts-box__body
@@ -42,6 +48,18 @@
 
   .mail
     font-size: 18px
+
+  .main-services h1 img, .step-services h2 img
+    margin: 0 0 0 40px
+    max-width: 100px
+
+  .subtitle
+    margin: 30px 0 0
+    h3
+      font-size: 40px
+
+  .step-services h2, .main-services h1
+    padding: 0 0 40px
 
 @media only screen and (max-width: 992px)
   .logo
@@ -176,12 +194,137 @@
   .goals-img
     min-width: auto
     margin: 0
+    height: auto
 
   .goals:nth-child(even) .goals-img
     margin: 0
 
   .goals:nth-child(even) .goals-content
     padding: 50px 20px
+
+  .attention-img
+    margin: 30px auto 0
+
+  .goals-about:nth-child(even) .goals-content
+    padding: 0 30px 0 0
+
+  .goals-about:nth-child(even) .goals-img
+    margin: 30px auto 0
+    float: none
+    height: auto
+    img
+      object-fit: none
+      height: auto
+
+  .division h3
+    font-size: 40px
+
+  .call-center .attention-img, .security-section-img
+    margin: 30px auto 0
+
+  .call-center__info h3
+    font-size: 26px
+    margin: 20px auto 30px
+
+  .call-center-img
+    min-width: auto
+    width: 100%
+
+  .response-team
+    padding: 40px 0
+
+  .clients-section
+    padding: 30px 0 0
+
+  .clients-section-img
+    min-width: auto
+    width: 100%
+    margin: 30px auto 0
+
+  .intercom
+    padding: 40px 0
+
+  .intercom .goals-content
+    padding: 30px 0 0
+
+  .intercom .goals-img
+    min-width: auto
+    margin: 30px auto 0
+    float: none
+    width: 100%
+
+  .control-system
+    padding: 40px 0 0
+
+  .electronic-tags-img
+    min-width: auto
+    width: 100%
+    margin: 30px 0 0 -15px
+    float: none
+
+  .electronic-tags
+    padding: 40px 0
+    h2
+      margin: 0 0 30px
+
+  .step-services .box-text
+    font-size: 16px
+
+  .step-services h2, .main-services h1
+    text-align: center
+
+  .group-patrol
+    padding: 40px 0 30px
+    h2
+      max-width: none
+      border: none
+      margin: 0 0 20px
+    .text
+      font-size: 16px
+      max-width: none
+      padding: 0
+      margin: 20px 0 0
+
+  .system-video-img
+    margin: 30px auto 0
+
+  .system-video
+    padding: 40px 0
+
+  .advantages-services-box
+    padding: 20px 0 0 40px
+    h3
+      min-height: auto
+      font-size: 20px
+
+  .important-section h2
+    margin: 0 0 40px
+    .text
+      font-size: 30px
+
+  .important-section-img
+    position: relative
+    margin: 20px auto
+    transform: none
+    left: 0
+    top: 0
+
+  .important-section-box
+    padding: 30px
+    font-size: 16px
+
+  .systems-security
+    padding: 40px 0
+
+  .systems-security-box
+    padding: 40px 0 0 40px
+    h3
+      font-size: 30px
+    .box-text
+      font-size: 15px
+
+  .around-the-clock
+    padding: 60px 0
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
@@ -227,6 +370,22 @@
     h2
       padding: 0 60px 0 0
 
+  .division h3
+    font-size: 30px
+
+  .division .advantages-box
+    margin: 0 0 40px
+
+  .subtitle h3
+    font-size: 30px
+
+  .category-services-box
+    padding: 30px
+    h3
+      font-size: 24px
+      max-width: none
+      margin: 0 0 20px
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
   .logo
@@ -256,7 +415,7 @@
 
 
   h1, h2
-    font-size: 34px
+    font-size: 26px
 
   .phone-my-style
     font-size: 40px
@@ -326,6 +485,15 @@
     margin: 0 0 40px
     font-size: 15px
 
+  .subtitle h3
+    font-size: 24px
+
+  .important-section h2
+    .text
+      font-size: 20px
+
+  .advantages-services-two .box-text
+    font-size: 16px
 
 @media only screen and (max-width: 480px)
   .contacts-form__col
@@ -340,6 +508,8 @@
     &:before
       display: none
 
+  .main-services h1 img, .step-services h2 img
+    margin: 20px auto 0
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)
