@@ -12,6 +12,8 @@ $(document).ready(function () {
                 scrollTop: $(scroll_el).offset().top
             }, 500);
         }
+        $('.btn-burger').removeClass('click');
+        $('.mobile-menu').fadeOut();
         return false;
     });
 });
@@ -23,3 +25,18 @@ $('.btn-burger').on('click', function () {
    $('.mobile-menu').fadeToggle();
 });
 
+// amount
+$('.down').on("click", function () {
+    let $input = $(this).parent().find('input');
+    let count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    return false;
+});
+$('.up').on("click",function () {
+    let $input = $(this).parent().find('input');
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    return false;
+});

@@ -34,6 +34,24 @@
   .call-center__content
     margin: 0
 
+  .total-calculate
+    padding: 30px
+
+  .total-calculate__body label
+    margin: 0 auto
+    max-width: 31%
+
+  .total-calculate button
+    max-width: 31%
+
+  .btn-card
+    max-width: 160px
+    padding: 0 15px
+    font-size: 14px
+
+  .product-card__body
+    padding: 20px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1100px)
   .contacts-box__body
@@ -60,6 +78,19 @@
 
   .step-services h2, .main-services h1
     padding: 0 0 40px
+
+  .product-card__body
+    width: calc(100% - 120px)
+
+  .product-card__img
+    width: 120px
+    padding: 20px
+
+  .product-card__price
+    font-size: 24px
+
+  .product-card__title
+    margin: 15px 0
 
 @media only screen and (max-width: 992px)
   .logo
@@ -326,6 +357,9 @@
   .around-the-clock
     padding: 60px 0
 
+  .total-val
+    font-size: 40px
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
   h1, h2
@@ -385,6 +419,23 @@
       font-size: 24px
       max-width: none
       margin: 0 0 20px
+
+  .total-calculate__body label
+    max-width: 100%
+    margin: 0 auto 15px
+    input
+      padding: 10px 20px
+
+  .total-calculate button
+    max-width: 300px
+    margin: 0 auto
+    font-size: 14px
+
+  .total-val
+    font-size: 30px
+
+  .total-calculate__top
+    margin: 0 0 40px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
@@ -495,6 +546,12 @@
   .advantages-services-two .box-text
     font-size: 16px
 
+  .total-val
+    font-size: 20px
+
+  .total-calculate__top:before
+    display: none
+
 @media only screen and (max-width: 480px)
   .contacts-form__col
     width: 100%
@@ -510,6 +567,14 @@
 
   .main-services h1 img, .step-services h2 img
     margin: 20px auto 0
+
+  .product-card__bottom
+    flex-direction: column
+    align-items: flex-start
+
+  .product-card__amount
+    margin: 0 0 10px
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)
