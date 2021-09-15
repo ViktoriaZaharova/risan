@@ -596,10 +596,21 @@ header {
   min-width: 22px;
   height: 22px;
   background: #d63417;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative; }
+  .checkbox-custom:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
 
-.inp-check:checked + .checkbox-custom {
-  background: #1d1d1b; }
+.inp-check:checked + .checkbox-custom:before {
+  background: url("../img/tick.svg") no-repeat center;
+    background-size: 100%; }
 
 .mobile-application {
   padding: 0 0 88px;
