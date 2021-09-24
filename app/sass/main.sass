@@ -1603,5 +1603,86 @@ header
     font-size: 19px
     cursor: pointer
 
+//tariffs
+.tariffs
+  padding: 28px 0 62px
+  h2
+    margin: 0 0 37px
+
+.tariffs-box
+  background: #ededed
+  color: #1d1d1b
+  height: 100%
+  &__title
+    width: 100%
+    background: $accent
+    color: #fff
+    padding: 30px 10px
+    h3
+      text-align: center
+      font-size: 27.5px
+      font-weight: bold
+  &__body
+    padding: 25px 36px 65px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    height: calc(100% - 94px)
+  .btn
+    margin: 70px auto 0
+    max-width: 324px
+    width: 100%
+    justify-content: space-between
+    padding: 12px 37px 12px 31px
+    font-size: 22px
+
+.list-tariff
+  font-size: 13px
+  margin: 0 0 33px
+  width: 100%
+  li
+    border-bottom: 1px solid #1d1d1b
+    padding: 21px 40px
+    &:last-child
+      border: none
+
+
+.tariffs-wrapper
+  padding: 0 70px
+
+.price-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-end
+  justify-content: space-between
+  flex-wrap: wrap
+  position: relative
+  font-weight: bold
+  font-size: 17.5px
+  z-index: 1
+  margin: auto 0 0
+  p
+    background: #ededed
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 3px
+    width: 100%
+    height: 1px
+    background: #1d1d1b
+    z-index: -1
+
+.price-val
+  font-size: 25px
+  color: $accent
+  background: #ededed
+  
+.tariffs-box-home
+  .btn
+    margin: 30px auto 0
+  .list-tariff li
+    padding: 14px 20px
+
 @import "media"
 // Всегда в конце
