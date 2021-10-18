@@ -23,6 +23,7 @@
         rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -42,7 +43,8 @@
           <span class="btn-icon"><img src="img/phone.png" alt=""></span>
         </a>
 
-        <a href="#" class="btn btn-key btn-red" data-toggle="modal" data-target="#modalCall"><span class="btn-text">Заказать ключ</span><span class="btn-icon"><img
+        <a href="#" class="btn btn-key btn-red" data-toggle="modal" data-target="#modalCall"><span class="btn-text">Заказать ключ</span><span
+            class="btn-icon"><img
             src="img/key.png"
             alt=""></span></a>
 
@@ -83,21 +85,81 @@
 </header>
 
 <main class="home">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h1 class="wow animate__animated animate__fadeInLeft">Заголовок</h1>
-        <a href="#blockBottom" class="mouse wow animate__animated animate__fadeInRight go_to"><img src="img/mouse.png" alt=""></a>
-        <div class="bullets wow animate__animated animate__fadeInUp">
-          <div class="bullet-item"><img src="img/bullet1.png" alt=""></div>
-          <div class="bullet-item"><img src="img/bullet2.png" alt=""></div>
-          <div class="bullet-item"><img src="img/bullet3.png" alt=""></div>
-          <div class="bullet-item"><img src="img/bullet4.png" alt=""></div>
-          <div class="bullet-item"><img src="img/bullet5.png" alt=""></div>
+  <div class="home-slider">
+    <div class="slide">
+      <div class="home-slider-item">
+        <video loop muted autoplay poster="img/bg1.jpg" class="fullscreen-bg__video">
+          <source src="video/office.mp4" type="video/mp4">
+        </video>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="wow animate__animated animate__fadeInLeft">Заголовок</h1>
+              <a href="#blockBottom" class="mouse wow animate__animated animate__fadeInRight go_to"><img
+                  src="img/mouse.png" alt=""></a>
+              <div class="bullets wow animate__animated animate__fadeInUp">
+                <div class="bullet-item"><img src="img/bullet1.png" alt=""></div>
+                <div class="bullet-item"><img src="img/bullet2.png" alt=""></div>
+                <div class="bullet-item"><img src="img/bullet3.png" alt=""></div>
+                <div class="bullet-item"><img src="img/bullet4.png" alt=""></div>
+                <div class="bullet-item"><img src="img/bullet5.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="home-slider-item">
+        <video loop muted autoplay poster="img/bg1.jpg" class="fullscreen-bg__video">
+          <source src="video/operator.mp4" type="video/mp4">
+        </video>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="wow animate__animated animate__fadeInLeft">Заголовок</h1>
+              <a href="#blockBottom" class="mouse wow animate__animated animate__fadeInRight go_to"><img
+                  src="img/mouse.png" alt=""></a>
+              <div class="bullets wow animate__animated animate__fadeInUp">
+                <div class="bullet-item"><img src="img/bullet1.png" alt=""></div>
+                <div class="bullet-item"><img src="img/bullet2.png" alt=""></div>
+                <div class="bullet-item"><img src="img/bullet3.png" alt=""></div>
+                <div class="bullet-item"><img src="img/bullet4.png" alt=""></div>
+                <div class="bullet-item"><img src="img/bullet5.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="home-slider-item">
+        <video loop muted autoplay poster="img/bg1.jpg" class="fullscreen-bg__video">
+          <source src="video/security.mp4" type="video/mp4">
+        </video>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="wow animate__animated animate__fadeInLeft">Заголовок</h1>
+              <a href="#blockBottom" class="mouse wow animate__animated animate__fadeInRight go_to"><img
+                  src="img/mouse.png" alt=""></a>
+              <div class="bullets wow animate__animated animate__fadeInUp">
+                <div class="bullet-item"><img src="img/bullet1.png" alt=""></div>
+                <div class="bullet-item"><img src="img/bullet2.png" alt=""></div>
+                <div class="bullet-item"><img src="img/bullet3.png" alt=""></div>
+                <div class="bullet-item"><img src="img/bullet4.png" alt=""></div>
+                <div class="bullet-item"><img src="img/bullet5.png" alt=""></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
 </main>
 
 <div class="category-section" id="blockBottom">
@@ -133,7 +195,8 @@
           <label><input type="text" placeholder="Телефон" name="phone"></label>
           <label class="checkbox">
             <input type="checkbox" class="inp-check">
-            <span class="checkbox-custom"></span><span class="checkbox-text">Согласие на обработку персональных данных.</span>
+            <span class="checkbox-custom"></span><span
+              class="checkbox-text">Согласие на обработку персональных данных.</span>
           </label>
           <button class="btn btn-black" type="submit">
             <span class="btn-text">Оставить заявку</span>
@@ -156,7 +219,7 @@
             <p>Жители наших проектов используют мобильное приложение
               для управления домом.</p>
 
-              <p>Вы сможете оперативно решить любой вопрос,
+            <p>Вы сможете оперативно решить любой вопрос,
               ведь телефон всегда с вами.</p>
           </div>
 
@@ -230,7 +293,8 @@
         <div class="contacts-box">
           <div class="contacts-box__head">
             <a href="tel:+78412209580" class="phone-my">+7 (8412) 20-95-80</a>
-            <a href="#" class="btn btn-call btn-black"><span class="btn-text">Заказать ключ</span><span class="btn-icon"><img
+            <a href="#" class="btn btn-call btn-black"><span class="btn-text">Заказать ключ</span><span
+                class="btn-icon"><img
                 src="img/phone2.png"
                 alt=""></span></a>
           </div>
@@ -360,6 +424,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/common.js"></script>
 
 </body>
