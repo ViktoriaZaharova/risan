@@ -4,6 +4,15 @@ $('.home-slider').slick({
     fade: true,
     autoplay: true,
     autoplaySpeed: 2000,
+    // asNavFor: '.bullets',
+    infinite: false
+});
+
+$('.bullets').slick({
+    slidesToShow: 5,
+    asNavFor: '.home-slider',
+    focusOnSelect: true,
+    infinite: false
 });
 
 $('[name="phone"]').mask('+7(999) 999-99-99');
@@ -29,8 +38,8 @@ $(document).ready(function () {
 
 // mobile menu
 $('.btn-burger').on('click', function () {
-   $(this).toggleClass('click');
-   $('.mobile-menu').fadeToggle();
+    $(this).toggleClass('click');
+    $('.mobile-menu').fadeToggle();
 });
 
 // amount
@@ -42,7 +51,7 @@ $('.down').on("click", function () {
     $input.change();
     return false;
 });
-$('.up').on("click",function () {
+$('.up').on("click", function () {
     let $input = $(this).parent().find('input');
     $input.val(parseInt($input.val()) + 1);
     $input.change();

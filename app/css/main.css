@@ -317,7 +317,7 @@ button {
     background: #fff;
     color: #d63417; }
 
-h1 {
+h1, .home-slider__title {
   text-align: center;
   font-weight: bold;
   font-size: 67px;
@@ -425,7 +425,19 @@ header {
   z-index: 1;
   color: #fff; }
   .home .bullets {
-    margin: 36px 0 0; }
+    bottom: 40px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 2; }
+    .home .bullets .slick-slide {
+      margin: 0 20px 0 0;
+      opacity: .5; }
+    .home .bullets .slick-current {
+      opacity: 1; }
+  .home .bullet-item {
+    width: 18px;
+    height: 18px; }
 
 .home-slider-item {
   padding: 432px 0 70px; }
@@ -468,6 +480,36 @@ header {
 
 .slick-slider {
   width: 100%; }
+
+.slick-dots {
+  z-index: 2;
+  bottom: 20px;
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .slick-dots li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    margin: 0 10px 0 0;
+    background: #fff; }
+    .slick-dots li:last-child {
+      margin: 0; }
+    .slick-dots li button {
+      display: none; }
+  .slick-dots .slick-active {
+    background: #d63417; }
 
 .security {
   position: relative;
@@ -2216,7 +2258,7 @@ header {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  h1, h2 {
+  h1, h2, .home-slider__title {
     font-size: 50px; }
   .mobile-application__box {
     margin: 40px 0 0;
@@ -2312,7 +2354,7 @@ header {
     left: 20px; }
     .btn-burger.click span:last-child {
       width: 1px; }
-  h1, h2 {
+  h1, h2, .home-slider__title {
     font-size: 26px; }
   .phone-my-style {
     font-size: 40px; }
