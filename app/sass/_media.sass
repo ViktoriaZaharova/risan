@@ -1,8 +1,7 @@
 @import "vars"
 
-/*==========  Desktop First  ==========*/
-
-/* Large Devices, Wide Screens */
+/*==========  Desktop First  ==========
+/* Large Devices, Wide Screens
 @media only screen and (max-width: 1200px)
   .logo
     max-width: 300px
@@ -22,6 +21,7 @@
 
   .address
     max-width: none
+
     br
       display: none
 
@@ -55,15 +55,31 @@
   .tariffs-wrapper
     padding: 0
 
-/* Medium Devices, Desktops */
+  .parking-assistant-details
+    padding: 25px
+    font-size: 18px
+    .box-text
+      font-size: 18px
+    .btn
+      max-width: 280px
+      font-size: 18px
+      height: 50px
+
+/* Medium Devices, Desktops
 @media only screen and (max-width: 1100px)
   .contacts-box__body
     margin: 30px 0
     padding: 30px 0
 
   .contacts-box__head
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
     flex-direction: column
+    -webkit-box-align: start
+    -ms-flex-align: start
     align-items: flex-start
+
     .btn
       margin: 10px 0 0
 
@@ -76,6 +92,7 @@
 
   .subtitle
     margin: 30px 0 0
+
     h3
       font-size: 40px
 
@@ -99,6 +116,8 @@
   .logo
     max-width: none
     margin: 0 auto 20px
+    -webkit-box-pack: center
+    -ms-flex-pack: center
     justify-content: center
 
   .btn-burger
@@ -106,14 +125,12 @@
     right: 0
     top: 20px
 
-  header
-    .btn
-      margin: 0 auto
+  header .btn
+    margin: 0 auto
 
   .category-links
     font-size: 20px
     height: 50px
-
 
   .category-section
     padding: 30px 0
@@ -126,11 +143,12 @@
 
   .house
     padding: 40px 0
+
     h2
       padding: 0 0 20px
+
     .box-text
       margin: 30px 0
-
 
   .house-img
     min-width: auto
@@ -138,8 +156,10 @@
 
   .mobile-application
     padding: 0 0 40px
+
     .box-text, h2
       padding: 0
+
     .box-text
       max-width: none
 
@@ -151,8 +171,10 @@
 
   .presentation
     padding: 40px 0
+
     .btn
       margin: 20px auto 0
+
     .box-text
       max-width: none
 
@@ -164,7 +186,6 @@
 
   .contacts-form
     margin: 30px 0 0
-
     max-width: none
 
   .contacts-box
@@ -182,22 +203,26 @@
 
   .main-house
     padding: 30px 0
+
     h1
       margin: 140px auto 0
 
   .calculate
     padding: 40px 0
+
     .btn
       margin: 30px auto 0
       font-size: 18px
       height: 60px
       padding: 0 20px
       max-width: 350px
+
       .btn-icon
         width: 30px
 
   .page-documents
     padding: 0 0 50px
+
     .breadcrumbs
       margin: 30px 0 50px
 
@@ -205,13 +230,16 @@
     padding: 0 30px
     font-size: 16px
     height: 65px
+
     .btn-icon
       width: 20px
 
   .details-information
     padding: 40px 0
+
     h2
       margin: 0 0 30px
+
     .mobile-application__img
       margin: 30px auto 0
 
@@ -220,8 +248,10 @@
 
   .goals-content
     padding: 50px 20px
+
     &:before
       top: 30px
+
     h2
       margin: 0 0 20px
 
@@ -230,25 +260,29 @@
     margin: 0
     height: auto
 
-  .goals:nth-child(even) .goals-img
-    margin: 0
+  .goals:nth-child(even)
+    .goals-img
+      margin: 0
 
-  .goals:nth-child(even) .goals-content
-    padding: 50px 20px
+    .goals-content
+      padding: 50px 20px
 
   .attention-img
     margin: 30px auto 0
 
-  .goals-about:nth-child(even) .goals-content
-    padding: 0 30px 0 0
+  .goals-about:nth-child(even)
+    .goals-content
+      padding: 0 30px 0 0
 
-  .goals-about:nth-child(even) .goals-img
-    margin: 30px auto 0
-    float: none
-    height: auto
-    img
-      object-fit: none
+    .goals-img
+      margin: 30px auto 0
+      float: none
       height: auto
+
+      img
+        -o-object-fit: none
+        object-fit: none
+        height: auto
 
   .division h3
     font-size: 40px
@@ -278,14 +312,14 @@
   .intercom
     padding: 40px 0
 
-  .intercom .goals-content
-    padding: 30px 0 0
+    .goals-content
+      padding: 30px 0 0
 
-  .intercom .goals-img
-    min-width: auto
-    margin: 30px auto 0
-    float: none
-    width: 100%
+    .goals-img
+      min-width: auto
+      margin: 30px auto 0
+      float: none
+      width: 100%
 
   .control-system
     padding: 40px 0 0
@@ -298,21 +332,28 @@
 
   .electronic-tags
     padding: 40px 0
+
     h2
       margin: 0 0 30px
 
-  .step-services .box-text
-    font-size: 16px
+  .step-services
+    .box-text
+      font-size: 16px
 
-  .step-services h2, .main-services h1
+    h2
+      text-align: center
+
+  .main-services h1
     text-align: center
 
   .group-patrol
     padding: 40px 0 30px
+
     h2
       max-width: none
       border: none
       margin: 0 0 20px
+
     .text
       font-size: 16px
       max-width: none
@@ -327,18 +368,21 @@
 
   .advantages-services-box
     padding: 20px 0 0 40px
+
     h3
       min-height: auto
       font-size: 20px
 
   .important-section h2
     margin: 0 0 40px
+
     .text
       font-size: 30px
 
   .important-section-img
     position: relative
     margin: 20px auto
+    -webkit-transform: none
     transform: none
     left: 0
     top: 0
@@ -352,8 +396,10 @@
 
   .systems-security-box
     padding: 40px 0 0 40px
+
     h3
       font-size: 30px
+
     .box-text
       font-size: 15px
 
@@ -363,16 +409,18 @@
   .total-val
     font-size: 40px
 
-  .tariffs-box
-    &__body
-      padding: 20px
-    .btn
-      margin: 30px auto 0
-      font-size: 18px
-    &__title
-      padding: 15px 10px
-    h3
-      font-size: 24px
+  .tariffs-box__body
+    padding: 20px
+
+  .tariffs-box .btn
+    margin: 30px auto 0
+    font-size: 18px
+
+  .tariffs-box__title
+    padding: 15px 10px
+
+  .tariffs-box h3
+    font-size: 24px
 
   .list-tariff li
     padding: 20px
@@ -380,7 +428,25 @@
   .tariffs
     padding: 30px 0
 
-/* Small Devices, Tablets */
+  .parking-assistant-content
+    padding: 0
+    margin: 0 0 30px
+    .title-decor
+      padding: 30px 30px 0 0
+      &:before
+        width: 25px
+        height: 25px
+    .box-text
+      max-width: none
+
+  .parking-assistant__img
+    max-width: 300px
+
+  .parking-assistant-details
+    .box-text
+      font-size: 16px
+
+/* Small Devices, Tablets
 @media only screen and (max-width: 768px)
   h1, h2, .home-slider__title
     font-size: 50px
@@ -388,9 +454,14 @@
   .mobile-application__box
     margin: 40px 0 0
     padding: 30px
+    -webkit-box-align: center
+    -ms-flex-align: center
     align-items: center
     text-align: center
+    -webkit-box-pack: center
+    -ms-flex-pack: center
     justify-content: center
+
     h3
       max-width: none
       margin: 0 auto 20px
@@ -407,9 +478,13 @@
 
   .form-modal
     margin: 0 auto
+
     .checkbox
+      -webkit-box-pack: start
+      -ms-flex-pack: start
       justify-content: flex-start
       margin: 0 0 30px
+
     .btn
       margin: 0 auto 20px
 
@@ -421,20 +496,23 @@
 
   .comfort
     padding: 40px 0 30px
+
     h2
       padding: 0 60px 0 0
 
-  .division h3
-    font-size: 30px
+  .division
+    h3
+      font-size: 30px
 
-  .division .advantages-box
-    margin: 0 0 40px
+    .advantages-box
+      margin: 0 0 40px
 
   .subtitle h3
     font-size: 30px
 
   .category-services-box
     padding: 30px
+
     h3
       font-size: 24px
       max-width: none
@@ -443,6 +521,7 @@
   .total-calculate__body label
     max-width: 100%
     margin: 0 auto 15px
+
     input
       padding: 10px 20px
 
@@ -469,33 +548,48 @@
   .tariffs-box h3
     font-size: 20px
 
-/* Extra Small Devices, Phones */
+  .parking-assistant-details
+    flex-wrap: wrap
+    .btn
+      margin: 20px auto 0
+    .box-text
+      margin: 20px 0 0
+      max-width: none
+
+  .parking-assistant-details__content
+    width: 100%
+    text-align: center
+
+
+/* Extra Small Devices, Phones
 @media only screen and (max-width: 576px)
-  .logo
-    img
-      max-width: 220px
+  .logo img
+    max-width: 220px
 
   .btn-burger
     width: 38px
     height: 24px
     top: 5px
+
     span
       margin: 0 0 7px
+
       &:last-child
         width: 28px
 
   header .btn
     padding: 10px 15px
     font-size: 12px
+
     .btn-icon
       margin: 0 0 0 10px
 
   .btn-burger.click span
     height: 24px
     left: 20px
+
     &:last-child
       width: 1px
-
 
   h1, h2, .home-slider__title
     font-size: 26px
@@ -505,29 +599,35 @@
 
   .form-callback
     padding: 30px
-    label
+
+    label, .checkbox
       width: 100%
-    .checkbox
-      width: 100%
+
     button
       width: 100%
       margin: 20px 0 0
 
   .link-application
     margin: 0 auto 20px
+
     &:last-child
       margin: 0 auto
 
   .mobile-application__box
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
     flex-direction: column
+    -webkit-box-align: center
+    -ms-flex-align: center
     align-items: center
     padding: 25px
 
-  .security
-    h2
-      padding: 0
-      &:before
-        display: none
+  .security h2
+    padding: 0
+
+    &:before
+      display: none
 
   .contacts-form
     padding: 30px
@@ -535,17 +635,21 @@
   .menu-list
     margin: 0 0 20px
     font-size: 18px
+
     li
       margin: 0 0 10px
 
   .form-modal
     padding: 0
+
     input
       height: 50px
       padding: 0 20px
+
     textarea
       height: 100px
       padding: 10px 20px
+
     .btn
       font-size: 13px
       padding: 0 20px
@@ -571,9 +675,8 @@
   .subtitle h3
     font-size: 24px
 
-  .important-section h2
-    .text
-      font-size: 20px
+  .important-section h2 .text
+    font-size: 20px
 
   .advantages-services-two .box-text
     font-size: 16px
@@ -584,16 +687,30 @@
   .total-calculate__top:before
     display: none
 
+  .parking-assistant-content .title-decor:before
+    width: 16px
+    height: 16px
+
+  .parking-assistant-content .title-decor
+    padding: 20px 20px 0 0
+    margin: 0 auto 20px
+
+  .parking-assistant__img
+    max-width: 200px
+
+  .parking-assistant
+    padding: 180px 0 0
+
 @media only screen and (max-width: 480px)
   .contacts-form__col
     width: 100%
 
-  .contacts-form
-    button
-      margin: 20px 0 0
+  .contacts-form button
+    margin: 20px 0 0
 
   .comfort h2
     padding: 0
+
     &:before
       display: none
 
@@ -601,36 +718,42 @@
     margin: 20px auto 0
 
   .product-card__bottom
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
     flex-direction: column
+    -webkit-box-align: start
+    -ms-flex-align: start
     align-items: flex-start
 
   .product-card__amount
     margin: 0 0 10px
 
-
-/* Custom, iPhone Retina */
+/* Custom, iPhone Retina
 @media only screen and (max-width: 420px)
   .logo
     max-width: 120px
     margin: 0 auto 0 0
+
     img
       max-width: none
       width: 100%
 
   header
     padding: 20px 0
-    .container
-      &:before
-        display: none
+
+    .container:before
+      display: none
+
     .btn
       margin: 0 10px 0 0
-
       padding: 0
       border: none
-        radius: 50%
-      .btn-text
+      border-radius: 50%
 
+      .btn-text
         display: none
+
       .btn-icon
         margin: 0
 
@@ -642,7 +765,6 @@
 
   .category-links
     font-size: 18px
-
 
 @media screen and (max-width: 596px)
   .no-phone
