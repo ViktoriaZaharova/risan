@@ -298,6 +298,9 @@ button
 .mb-30
   margin-bottom: 30px
 
+.mb-58
+  margin-bottom: 58px
+
 .logo
   max-width: 370px
   width: 100%
@@ -336,6 +339,18 @@ button
   &:hover
     background: #fff
     color: #d63417
+
+.btn-border
+  border: 1px solid #D63417
+  padding: 7.5px 26px
+  color: #FFF
+  font-size: 16px
+  font-weight: bold
+  &:hover
+    background: $accent
+    color: #fff
+    .btn-icon
+      filter: brightness(0) invert(1)
 
 h1, .home-slider__title
   text-align: center
@@ -600,11 +615,13 @@ header
   align-items: flex-start
   padding: 53px 42px 39px
   font-size: 25px
+
   .box-text
     max-width: 520px
     width: 100%
     margin: 30px 0 0
     font-size: 25px
+
   h3
     font-weight: bold
     text-transform: uppercase
@@ -617,6 +634,7 @@ header
     font-weight: bold
     margin: 0 0 0 auto
     color: #D63417
+
   .btn-white
     &:hover
       background: $black
@@ -2208,5 +2226,201 @@ header
   margin: 0 auto 20px
   font-size: 13px
   font-weight: 500
+
+
+//projects page
+.main-projects
+  background: #E0E0E0 url("../img/projects-bg.png") no-repeat right center
+    size: 1390px
+  padding: 109px 0 95px
+  color: #1D1D1B
+  h1
+    text-align: left
+    color: $accent
+    font-size: 64px
+    margin: 0 0 6px
+  h4
+    font-size: 32px
+  .box-text
+    margin: 76px 0 0
+    font-size: 20px
+    padding: 0 0 61px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      bottom: 0
+      right: 0
+      width: 19px
+      height: 19px
+      background: url("../img/decor3.svg") no-repeat center
+        size: 100%
+
+.main-projects-content
+  max-width: 550px
+  width: 100%
+
+.risan-safety
+  text-align: center
+  padding: 80px 0 69px
+  background: #1D1D1B
+  color: #fff
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    transform: translate(-50%,0)
+    width: 36px
+    height: 36px
+    bottom: -16px
+    background: url("../img/arrow-bottom.svg") no-repeat center
+      size: 100%
+  .box-text
+    max-width: 530px
+    width: 100%
+    margin: 0 auto 13px
+    font-size: 20px
+  h2
+    font-size: 48px
+
+.projects
+  margin: 97px 0 134px
+  h2
+    margin: 0 0 42px
+
+.projects-card
+  width: 100%
+  height: 100%
+  background: #1D1D1B
+  color: #fff
+  &__img
+    width: 100%
+    height: 310px
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    padding: 48px 43px 60px 29px
+    display: flex
+    flex-direction: column
+  &__text
+    padding: 0 17px 27px
+    border-bottom: 1px solid #fff
+    margin: 0 0 auto
+  .btn
+    margin: 41px 0 0 auto
+  h3
+    font-size: 32px
+    font-weight: bold
+    margin: 0 0 10px
+    width: 100%
+  .box-text
+    font-size: 20px
+
+.projects-modal
+  .modal-dialog
+    max-width: 1170px
+  .modal-content
+    padding: 0
+    background: #1D1D1B
+    color: #ffff
+  .modal-body
+    width: 100%
+  &__img
+    width: 100%
+    height: 451px
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__title
+    width: 100%
+    position: relative
+    text-align: center
+    padding: 39px 0 56px
+    background: #D63417
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      bottom: -13px
+      transform: translate(-50%,0)
+      width: 36px
+      height: 36px
+      background: url("../img/arrow-bottom.svg") no-repeat center
+        size: 100%
+      filter: brightness(0) invert(1)
+    h3
+      margin: 0 auto 8px
+      color: #1D1D1B
+      font-size: 40px
+      font-weight: bold
+  &__date
+    font-size: 19.3px
+    font-weight: bold
+  &__body
+    padding: 128px 64px 77px
+    h3
+      text-align: center
+      margin: 0 auto 90px
+      font-size: 19.3px
+      font-weight: bold
+      width: 100%
+      color: $accent
+  &__box
+    text-align: center
+    position: relative
+    font-size: 16px
+    font-weight: normal
+    margin: 0 0 97px
+    &:before
+      content: ''
+      position: absolute
+      left: 18px
+      top: -14px
+      width: 16px
+      height: 16px
+      background: url("../img/decor3.svg") no-repeat center
+        size: 100%
+      transform: rotate(180deg)
+    &-icon
+      margin: 0 auto 15px
+      height: 66px
+      display: flex
+      align-items: center
+      justify-content: center
+      img
+        max-height: 100%
+
+.projects-modal-v2
+  .projects-modal__body
+    padding: 55px 64px 77px
+
+.mobile-application-v2
+  .mobile-application__content
+    padding: 45px 0 0
+    max-width: 620px
+    margin: 0 auto
+  h2, .box-text
+    padding: 0
+  .mobile-application__box
+    margin: 33px auto 0
+  .box-text
+    max-width: 527px
+
+.company-shield
+  margin: 0 0 37px
+
+.mobile-application__content-text
+  padding: 0 0 0 45px
+
 
 @import "media"

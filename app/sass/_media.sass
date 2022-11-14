@@ -2,6 +2,20 @@
 
 /*==========  Desktop First  ==========
 /* Large Devices, Wide Screens
+@media only screen and (max-width: 1340px)
+  .main-projects
+    -webkit-background-size: 1050px
+    background-size: 1050px
+    padding: 70px 0
+    h4
+      font-size: 28px
+    .box-text
+      margin: 30px 0 0
+      padding: 0 0 40px
+      font-size: 18px
+    h1
+      font-size: 60px
+
 @media only screen and (max-width: 1200px)
   .logo
     max-width: 300px
@@ -65,6 +79,15 @@
       font-size: 18px
       height: 50px
 
+  .main-projects-content
+    max-width: 450px
+
+  .main-projects
+    h1
+      font-size: 50px
+    h4
+      font-size: 22px
+
 /* Medium Devices, Desktops
 @media only screen and (max-width: 1100px)
   .contacts-box__body
@@ -111,6 +134,13 @@
 
   .product-card__title
     margin: 15px 0
+
+  .projects-card
+    h3
+      font-size: 28px
+
+  .mobile-application-v2 .mobile-application__box
+    padding: 30px 20px
 
 @media only screen and (max-width: 992px)
   .logo
@@ -446,6 +476,61 @@
     .box-text
       font-size: 16px
 
+  .main-projects
+    -webkit-background-size: cover
+    background-size: cover
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      background: #E0E0E0
+      opacity: .5
+    h1
+      margin: 0 0 8px
+
+  .risan-safety
+    padding: 60px 0
+    h2
+      font-size: 40px
+
+  .projects
+    margin: 60px 0 40px
+
+  .mb-58
+    margin-bottom: 30px
+
+  .projects-card
+    &__text
+      padding: 0 0 10px
+    h3
+      font-size: 24px
+    .box-text
+      font-size: 18px
+    &__body
+      padding: 30px 20px
+    &__img
+      height: 270px
+
+  .projects-modal__body
+    padding: 60px 40px 30px
+
+  .projects-modal__box
+    margin: 0 0 30px
+
+  .mobile-application__content-text
+    padding: 0
+
+
+  .mobile-application-v2
+    .mobile-application__content
+      max-width: none
+    .mobile-application__img
+      max-width: 400px
+
 /* Small Devices, Tablets
 @media only screen and (max-width: 768px)
   h1, h2, .home-slider__title
@@ -560,6 +645,8 @@
     width: 100%
     text-align: center
 
+  .projects-modal__img
+    height: auto
 
 /* Extra Small Devices, Phones
 @media only screen and (max-width: 576px)
@@ -701,6 +788,50 @@
   .parking-assistant
     padding: 180px 0 0
 
+  .main-projects
+    h1
+      font-size: 40px
+    h4
+      font-size: 22px
+    .box-text
+      font-size: 16px
+      padding: 0 0 20px
+      margin: 20px 0 0
+    &:before
+      opacity: .7
+
+  .main-projects-content
+    max-width: none
+
+  .risan-safety
+    .box-text
+      font-size: 18px
+    h2
+      font-size: 30px
+
+  .projects h2
+    margin: 0 0 30px
+
+  .projects-modal
+    &__title
+      padding: 30px 0 40px
+      h3
+        font-size: 30px
+    &__body
+      padding: 50px 20px 30px
+
+  .projects-modal__box
+    font-size: 14px
+    &-icon
+      height: 56px
+
+  .projects-modal-v2 .projects-modal__body
+    padding: 50px 20px 30px
+
+  .projects-modal__body h3
+    margin: 0 auto 40px
+
+
 @media only screen and (max-width: 480px)
   .contacts-form__col
     width: 100%
@@ -765,6 +896,22 @@
 
   .category-links
     font-size: 18px
+
+  .main-projects
+    h1
+      font-size: 34px
+
+  .projects-card
+    &__img
+      height: auto
+    .btn
+      margin: 20px 0 0 auto
+
+  .projects-modal__box
+    font-size: 12px
+
+  .projects-modal__title h3
+    font-size: 24px
 
 @media screen and (max-width: 596px)
   .no-phone
